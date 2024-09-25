@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.svg">
+    <title>Bootstrap HW</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @media (max-width: 576px) {
+            .carousel-item img {
+                height: 400px;
+
+            }
+        }
+
+        @media (min-width: 768px) {
+            .carousel-item img {
+                height: 600px;
+
+            }
+        }
+
+        @media (min-width: 992px) {
+            .carousel-item img {
+                height: 800px;
+
+            }
+        }
+
+        .right {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">My Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Section 1
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <li><a class="dropdown-item" href="#">1</a></li>
+                                <li><a class="dropdown-item" href="#">2</a></li>
+                                <li><a class="dropdown-item" href="#">3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Section 2
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <li><a class="dropdown-item" href="#">1</a></li>
+                                <li><a class="dropdown-item" href="#">2</a></li>
+                                <li><a class="dropdown-item" href="#">3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row p-3">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="https://via.placeholder.com/300x1000" class="d-block w-100" alt="..."
+                                style="object-fit: cover;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="https://via.placeholder.com/300x1000" class="d-block w-100" alt="..."
+                                style="object-fit: cover;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/300x1000" class="d-block w-100" alt="..."
+                                style="object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-8 col-sm-12 mb-4">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Emergence of Byzantium
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                The Byzantine Empire, also known as the Eastern Roman Empire, emerged after the division
+                                of the Roman Empire in 395 AD. It became a successor to the ancient traditions, with its
+                                capital in Constantinople (modern-day Istanbul), founded by Emperor Constantine the
+                                Great.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Golden Age of Byzantium
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                The Golden Age of Byzantium fell during the reign of Emperor Justinian I (527-565 AD).
+                                During this period, great monuments were built, such as the Hagia Sophia, and the Code
+                                of Justinian was created, which had a significant impact on the development of the legal
+                                system of Europe.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Fall of the Byzantine Empire
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                The Byzantine Empire lasted for over a thousand years, but in 1453 it fell to the
+                                Ottoman
+                                Empire, when Turkish forces led by Sultan Mehmed II captured Constantinople. This year
+                                marks the end of the Middle Ages and the beginning of a new era in European history.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-12 right">
+                <figure>
+                    <blockquote class="blockquote">
+                        <p>«Constantinople - this is not just a city, but the heart of the empire, the bridge between
+                            East and West.»</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Historian <cite title="Source Title">about Byzantium</cite>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center p-3 mt-4">
+        <p>Footer &copy; 2024</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
